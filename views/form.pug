@@ -1,0 +1,11 @@
+block content
+  h1= title
+  form(action='/new', method='POST')
+    div
+      label(for='text') Text: 
+      input(type='text', name='messageText', value='', id='text')
+    div
+      label(for='user') User: 
+      input(type='text', name='messageUser', value='', id='user')
+    div
+      input(type='submit', value='post')
